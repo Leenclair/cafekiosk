@@ -14,6 +14,6 @@ public class CafeKioskRunner {
 
         int totalPrice = cafeKiosk.calculateTotalPrice();
         System.out.println("총 주문가격 : " + totalPrice);
-        
     }
+
 }
