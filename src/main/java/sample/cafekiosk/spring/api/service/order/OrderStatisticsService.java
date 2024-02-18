@@ -29,7 +29,6 @@ public class OrderStatisticsService {
         int totalAmount = orders.stream()
                 .mapToInt(Order::getTotalPrice)
                 .sum();
-        System.out.println(totalAmount);
 
         //메일 전송
         boolean result = mailService.sendMail(
@@ -45,6 +44,5 @@ public class OrderStatisticsService {
 
         return true;
     }
-
 
 }
