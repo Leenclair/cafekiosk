@@ -41,6 +41,7 @@ class OrderServiceTest {
 
     @AfterEach
     void tearDown() {
+        //deleteAllInBatch() 와 deleteAll 차이 check
         orderProductRepository.deleteAllInBatch();
         productRepository.deleteAllInBatch();
         orderRepository.deleteAllInBatch();
